@@ -8,6 +8,11 @@ module SpreeI18n
         add("config/locales/#{pattern}.{rb,yml}")
       end
     end
+  railtie_name :spree_i18n
+
+  rake_tasks do
+    load "tasks/i18n.rake"
+  end
 
     protected
 
